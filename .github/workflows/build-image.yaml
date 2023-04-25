@@ -10,15 +10,15 @@ env:
 
 jobs:
   build: 
-  runs-on: ubuntu-latest 
-  steps:
-  - name: Get Code
-    uses: actions/checkout@v2
- 
-  - name: docker login 
-    run: | 
-      docker login -u rayanoh -p ${{env.DOCKER_PASSWORD}}
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Get Code
+      uses: actions/checkout@v2
 
-  - name: Build Image 
-    run: |
-      docker build -t Rayane59/Aston:latest . 
+    - name: docker login 
+      run: | 
+        docker login -u rayanoh -p ${{env.DOCKER_PASSWORD}}
+
+    - name: Build Image 
+      run: |
+        docker build -t Rayane59/Aston:latest . 
