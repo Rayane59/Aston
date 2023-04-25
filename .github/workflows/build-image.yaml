@@ -26,8 +26,8 @@ jobs:
           echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
     - name: Build Image 
       run: |
-        docker build -t Rayane59/${{ env.IMAGE_NAME}}:${{ env.IMAGE_TAG}} .
+        docker build -t rayanoh/${{ env.IMAGE_NAME}}:${{ env.IMAGE_TAG}} .
     
     - name: Docker Push
       run: |
-          docker push Rayane59/${{ env.IMAGE_NAME}}:${{ env.IMAGE_TAG}}
+          docker push rayano/${{ env.IMAGE_NAME}}:${{ env.IMAGE_TAG}}
