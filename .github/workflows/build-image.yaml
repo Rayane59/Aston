@@ -10,7 +10,7 @@ env:
 
 jobs:
   build: 
-  run-on: ubuntu-latest 
+  runs-on: ubuntu-latest 
   steps:
   - name: Get Code
     uses: actions/checkout@v2
